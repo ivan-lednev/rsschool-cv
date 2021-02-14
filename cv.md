@@ -171,3 +171,15 @@ assignNeighbors()
 createSeed()
 requestAnimationFrame(tick)
 ```
+
+# Work experience
+
+EPAM: 2018 - present
+
+# Education
+
+Minsk State Linguistic University, 2012-2017, interpreters' department
+
+# English
+
+C2, certified by EPAM
