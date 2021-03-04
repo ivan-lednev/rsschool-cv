@@ -8,225 +8,137 @@
             content="width=device-width, initial-scale=1.0, user-scalable=yes"
         />
         <title>cv</title>
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@600&family=Inter:wght@400;600&display=swap"
+            rel="stylesheet"
+        />
         <link rel="stylesheet" href="styles.css" />
     </head>
     <body>
-        <nav id="TOC" role="doc-toc">
-            <ul>
-                <li><a href="#contact-information">Contact information</a></li>
-                <li><a href="#summary">Summary</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#code-examples">Code examples</a></li>
-                <li><a href="#work-experience">Work experience</a></li>
-                <li><a href="#education">Education</a></li>
-                <li><a href="#english">English</a></li>
-            </ul>
-        </nav>
-        <img src="photo.jpg" alt="photo" width="200">
-        <h1 id="contact-information">Contact information</h1>
-        <ul>
-            <li>Ivan Lednev</li>
-            <li>ivan_liadniou@epam.com</li>
-            <li>bishop1860@gmail.com</li>
-        </ul>
-        <h1 id="summary">Summary</h1>
-        <p>
-            I’m currently a test automation engineer at EPAM. I’ve enrolled into
-            the RSS front-end course to get some practical experience with JS.
-            If I find it interesting, I might pivot and become a front-end or
-            full-stack developer in the future.
-        </p>
-        <h1 id="skills">Skills</h1>
-        <ul>
-            <li>
-                Programming languages
-                <ul>
-                    <li>Core Java</li>
-                    <li>Automated testing in Java</li>
-                    <li>
-                        Java frameworks
+        <div class="flex-container">
+            <div class="toc-wrapper">
+                <div class="sticky-section">
+                    <nav id="TOC" role="doc-toc">
+                        <h1>Table of contents</h1>
                         <ul>
-                            <li>Selenium</li>
-                            <li>JUnit</li>
-                            <li>Spring framework</li>
-                            <li>JBehave</li>
+                            <li><a href="#summary">Summary</a></li>
+                            <li><a href="#skills">Skills</a></li>
+                            <li><a href="#code-examples">Code examples</a></li>
+                            <li>
+                                <a href="#work-experience">Work experience</a>
+                            </li>
+                            <li><a href="#education">Education</a></li>
+                            <li><a href="#english">English</a></li>
                         </ul>
-                    </li>
-                    <li>Core Python</li>
-                    <li>Automated testing in Python</li>
-                    <li>
-                        Python frameworks
+                    </nav>
+                </div>
+            </div>
+            <div class="main-content">
+                <section>
+                    <h1 id="summary">Summary</h1>
+                    <p>
+                        I’m currently a test automation engineer at EPAM. I’ve
+                        enrolled into the RSS front-end course to get some
+                        practical experience with JS. If I find it interesting,
+                        I might pivot and become a front-end or full-stack
+                        developer in the future.
+                    </p>
+                </section>
+                <section>
+                    <h1 id="skills">Skills</h1>
+                    <h2>Programming languages</h2>
+                    <ul>
+                        <li>Core Java</li>
+                        <li>Automated testing in Java</li>
+                        <li>
+                            Java frameworks
+                            <ul>
+                                <li>Selenium</li>
+                                <li>JUnit</li>
+                                <li>Spring framework</li>
+                                <li>JBehave</li>
+                            </ul>
+                        </li>
+                        <li>Core Python</li>
+                        <li>Automated testing in Python</li>
+                        <li>
+                            Python frameworks
+                            <ul>
+                                <li>Pytest</li>
+                                <li>Unittest</li>
+                                <li>Radish</li>
+                            </ul>
+                        </li>
+                        <li>Core JavaScript</li>
+                        <li>
+                            JavaScript frameworks
+                            <ul>
+                                <li>Jest</li>
+                            </ul>
+                        </li>
+                        <li>Bash</li>
+                    </ul>
+                    <h2>Developer tools</h2>
+                    <ul>
+                        <li>Git</li>
+                    </ul>
+                    <h3>IDEs, editors</h3>
+                    <ul>
+                        <li>Intellij Idea</li>
+                        <li>PyCharm</li>
+                        <li>Vim</li>
+                        <li>Emacs</li>
+                        <li>Visual Studio Code</li>
+                    </ul>
+                </section>
+                <section>
+                    <h1 id="code-examples">Code examples</h1>
+                    <p>
+                        This is a simple implementation of
+                        <a
+                            href="https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life"
+                            target="_blank"
+                            >Conway’s game of life</a
+                        >
+                    </p>
+                    <button id="life-button">Add more life!</button>
+                    <canvas id="canvas" width="500" height="500"></canvas>
+                </section>
+                <section>
+                    <h1 id="work-experience">Work experience</h1>
+                    <p>EPAM: 2018 - present</p>
+                    <h1 id="education">Education</h1>
+                    <p>
+                        Minsk State Linguistic University, 2012-2017,
+                        interpreters’ department
+                    </p>
+                </section>
+                <section>
+                    <h1 id="english">English</h1>
+                    <p>C2, certified by EPAM</p>
+                </section>
+            </div>
+            <div class="contacts-wrapper sticky-section">
+                <setion>
+                    <h1>Photo</h1>
+                    <figure>
+                        <img src="photo.jpg" alt="photo" width="200" />
+                        <figcaption>Photo</figcaption>
+                    </figure>
+                </setion>
+                <div class="sticky-section">
+                    <section>
+                        <h1 id="contact-information">Contact information</h1>
                         <ul>
-                            <li>Pytest</li>
-                            <li>Unittest</li>
-                            <li>Radish</li>
+                            <li>Ivan Lednev</li>
+                            <li>ivan_liadniou@epam.com</li>
+                            <li>bishop1860@gmail.com</li>
                         </ul>
-                    </li>
-                    <li>Core JavaScript</li>
-                    <li>
-                        JavaScript frameworks
-                        <ul>
-                            <li>Jest</li>
-                        </ul>
-                    </li>
-                    <li>Bash</li>
-                </ul>
-            </li>
-            <li>Git</li>
-            <li>Linux</li>
-            <li>
-                IDEs, editors
-                <ul>
-                    <li>Intellij Idea</li>
-                    <li>PyCharm</li>
-                    <li>Vim</li>
-                    <li>Emacs</li>
-                    <li>Visual Studio Code</li>
-                </ul>
-            </li>
-        </ul>
-        <h1 id="code-examples">Code examples</h1>
-        <p>This is a simple implementation of Conway’s game of life</p>
-        <pre><code>const canvas = document.getElementById(&#39;canvas&#39;)
-const ctx = canvas.getContext(&#39;2d&#39;)
-const grid = []
-
-const width = Math.floor(document.querySelector(&#39;canvas&#39;).getAttribute(&#39;width&#39;))
-const height = Math.floor(document.querySelector(&#39;canvas&#39;).getAttribute(&#39;height&#39;))
-const centerX = width / 2
-const centerY = height / 2
-const cellSize = 4
-const columns = Math.floor(height / cellSize)
-const rows = Math.floor(width / cellSize)
-const throttleFactor = 3
-let throttleCounter = 0
-
-
-class Cell {
-    constructor(y, x) {
-        this.alive = false
-        this.neighbors = []
-        this.y = y
-        this.x = x
-        this.aliveForNextTick = false
-    }
-
-    makeAlive() {
-        ctx.fillRect(this.x * cellSize, this.y * cellSize, cellSize, cellSize)
-        this.alive = true
-    }
-
-    kill() {
-        ctx.clearRect(this.x * cellSize, this.y * cellSize, cellSize, cellSize)
-        this.alive = false
-    }
-
-    isAlive() {
-        return this.alive
-    }
-
-    setStateForNextTick() {
-        const livingNeighbors = this.neighbors
-            .filter((n) =&gt; n != null &amp;&amp; n.isAlive())
-            .length
-        if (livingNeighbors &gt; 1 &amp;&amp; livingNeighbors &lt; 4 &amp;&amp; (this.alive || livingNeighbors &gt; 2)) {
-            this.aliveForNextTick = true
-        }
-    }
-
-    update() {
-        if (this.aliveForNextTick &amp;&amp; !this.alive) {
-            this.makeAlive()
-        } else if (!this.aliveForNextTick &amp;&amp; this.alive) {
-            this.kill()
-        }
-        this.aliveForNextTick = false
-    }
-}
-
-function createCells() {
-    for (let rowIndex = 0; rowIndex &lt; columns; rowIndex++) {
-        let row = []
-        cellX = rowIndex * cellSize
-        for (let cellIndex = 0; cellIndex &lt; rows; cellIndex++) {
-            cell = new Cell(rowIndex, cellIndex)
-            row.push(cell)
-        }
-        grid.push(row)
-    }
-}
-
-const neighborIndexes = [
-    [-1, -1], [-1, 0], [-1, 1],
-    [0, -1], [0, 1],
-    [1, -1], [1, 0], [1, 1]
-]
-
-function assignNeighbors() {
-    for (let rowIndex = 0; rowIndex &lt; grid.length; rowIndex++) {
-        const row = grid[rowIndex];
-        for (let cellIndex = 0; cellIndex &lt; row.length; cellIndex++) {
-            const cell = row[cellIndex];
-            for (const relativeCoords of neighborIndexes) {
-                const [yOffset, xOffset] = relativeCoords
-                neighborY = cell.y + yOffset
-                neighborX = cell.x + xOffset
-                if (neighborY &gt;= 0 &amp;&amp; neighborY &lt; grid.length &amp;&amp; neighborX &gt;= 0 &amp;&amp; neighborX &lt; row.length) {
-                    neighbor = grid[neighborY][neighborX]
-                    cell.neighbors.push(neighbor)
-                } else {
-                    cell.neighbors.push(null)
-                }
-            }
-        }
-    }
-}
-
-function tick() {
-    requestAnimationFrame(tick)
-    throttleCounter++
-    const needToUpdateFrame = throttleCounter % throttleFactor === 0
-    if (needToUpdateFrame) {
-        grid.forEach(row =&gt; row.forEach(cell =&gt; cell.setStateForNextTick()))
-        grid.forEach(row =&gt; row.forEach(cell =&gt; cell.update()))
-    }
-}
-
-function createSeed() {
-    function switchOn(x, y) {
-        grid[y][x].makeAlive()
-    }
-    switchOn(73, 60)
-    switchOn(74, 60)
-    switchOn(100, 50)
-    switchOn(101, 50)
-    switchOn(102, 50)
-    switchOn(103, 50)
-    switchOn(104, 50)
-    switchOn(100, 50)
-    switchOn(101, 50)
-    switchOn(102, 50)
-    switchOn(103, 50)
-    switchOn(104, 61)
-    switchOn(100, 60)
-    switchOn(101, 60)
-    switchOn(102, 60)
-    switchOn(103, 60)
-    switchOn(104, 60)
-}
-
-createCells()
-assignNeighbors()
-createSeed()
-requestAnimationFrame(tick)</code></pre>
-        <h1 id="work-experience">Work experience</h1>
-        <p>EPAM: 2018 - present</p>
-        <h1 id="education">Education</h1>
-        <p>
-            Minsk State Linguistic University, 2012-2017, interpreters’
-            department
-        </p>
-        <h1 id="english">English</h1>
-        <p>C2, certified by EPAM</p>
+                    </section>
+                </div>
+            </div>
+        </div>
     </body>
+    <script src="game-of-life.js"></script>
 </html>
